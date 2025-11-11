@@ -1,0 +1,39 @@
+# =============================================
+# Unit Tests Workflow (Placeholder)
+# =============================================
+# Purpose: Set up an automated test pipeline that
+# will run Python tests (pytest) in later tasks.
+# Trigger: On every push or pull request.
+# =============================================
+
+name: Unit Tests (Placeholder)
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Set Up Python Environment
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.10"
+
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+
+      - name: Run Unit Tests (Placeholder)
+        run: echo "🧪 Unit tests will be added in future tasks."
+
+      - name: Display Completion Message
+        run: echo "✅ Unit test pipeline executed successfully!"
