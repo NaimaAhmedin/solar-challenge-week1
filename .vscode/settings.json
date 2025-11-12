@@ -1,0 +1,9 @@
+{
+	"python.defaultInterpreterPath": "C:\\Users\\naima\\venvs\\scw1\\Scripts\\python.exe",
+	"jupyter.jupyterServerType": "local",
+	"python.analysis.extraPaths": [
+		"C:\\Users\\naima\\venvs\\scw1\\Lib\\site-packages"
+	],
+	"python.analysis.useLibraryCodeForTypes": true
+}
+
